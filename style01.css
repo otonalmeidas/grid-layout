@@ -1,0 +1,33 @@
+#main {
+    display: grid;
+    /* grid-template-areas: define um modelo de template coluna */
+    grid-template-areas: "cabecalho         cabecalho"
+                         "menu              menu"
+                         "primeiro-conteudo segundo-conteudo"
+                         "rodape            rodape";
+    /* grid-template-rows: define a altura para o elemento linha */
+    grid-template-rows: 20px 30px 200px 20px;
+    /* grid-template-columns: define a largura para o elemento coluna */
+    grid-template-columns: 80% 20%;
+}
+    /* grid-area: determina a localização do elemento */
+.cabecalho {
+    background-color: red;
+    grid-area: cabecalho;
+}
+.menu {
+    background-color: silver;
+    grid-area: menu;
+}
+.primeiro-conteudo {
+    background-color: green;
+    grid-area: primeiro-conteudo;
+}
+.segundo-conteudo {
+    background-color: orange;
+    grid-area: segundo-conteudo;
+}
+.rodape {
+    background-color: pink;
+    grid-area: rodape;
+}

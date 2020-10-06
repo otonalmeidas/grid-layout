@@ -1,0 +1,46 @@
+#main {
+    display: grid;
+    /* grid-template-rows: define a altura para o elemento linha */
+    grid-template-rows: repeat(5, 50px);
+    /* grid-template-columns: define a largura para o elemento coluna */
+    grid-template-columns: repeat(5, 1fr);
+
+    /* gap: define espaçamento sobre os elementos */
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+.cabecalho {
+    background-color: red;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.menu {
+    background-color: silver;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+.primeiro-conteudo {
+    background-color: green;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.segundo-conteudo {
+    background-color: orange;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+.rodape {
+    background-color: pink;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}

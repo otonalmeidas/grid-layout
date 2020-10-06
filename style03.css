@@ -1,0 +1,37 @@
+/* Material de Apoio:
+
+https://www.layoutit.com/pt
+
+*/
+
+
+#main {
+    display: grid;
+    /* grid-template-rows: define a altura para o elemento linha */
+    grid-template-rows: repeat(5, 50px);
+    /* grid-template-columns: define a largura para o elemento coluna */
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* align-self: alinhamento vertical dos elementos */
+/* justify-self: alinhamento horizontal dos elementos */
+/* place-self: contempla os alinhamentos align-self e justify-self */
+.cabecalho {
+    background-color: red;
+    justify-self: start;
+}
+.menu {
+    background-color: silver;
+    align-self: start;
+}
+.primeiro-conteudo {
+    background-color: green;
+    place-self: center;
+}
+.segundo-conteudo {
+    background-color: orange;
+    align-self: end;
+}
+.rodape {
+    background-color: pink;
+    justify-self: end;
